@@ -1,0 +1,72 @@
+* {
+  border-radius: 30px;
+  padding: 8px;
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  color: black;
+}
+img {
+  margin: 0 auto;
+  height: 200px;
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+.mouseEvent {
+  border: 6px solid salmon;
+  width: 220px;
+
+  /* Permet de positionner en fonction du parent (dans ce cas body*/
+  position: absolute;
+
+  /* Positionne les coin gauche à 50% de la page */
+  left: 20%;
+  /* Décale de 50% de la taille de l'élement <- vers la gauche */
+  transform: translateX(-50%);
+  /* Les deux ensembles donnent centré */
+
+  padding: 10px;
+}
+
+.themeContainer {
+  position: fixed; /*seront positionnés en haut à droite de la page*/
+  top: 0;
+}
+.theme {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+#dark {
+  background-color: black;
+}
+#salmon {
+  background-color: salmon;
+}
+#yellow {
+  background-color: yellow;
+}
+
+.darkTheme {
+  background-color: black;
+  color: white;
+}
+.salmonTheme {
+  background-color: salmon;
+}
+.yellowTheme {
+  background-color: yellow;
+}
+
+/* Un élément positionné de façon absolue est un élément dont la propriété de position calculée 
+est absolute ou fixed. Dans ce cas, les propriétés top, bottom, right et left indiquent 
+les distances entre les bords de l'élément et les bords du bloc englobant 
+(c'est-à-dire l'ancêtre par rapport auquel l'élément est positionné). 
+Si l'élément possède des marges, elles sont ajoutées aux décalages. */
