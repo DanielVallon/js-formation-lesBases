@@ -1,0 +1,33 @@
+const array = ["Paris", "Lyon", "Montreal", "Bordeau"];
+const array1 = ["Paris", 33, "Lyon", ["Montreal", "Bordeau"], true];
+
+//Afficher la 4ème lettre du 2ème élément
+console.log(array[2][4]);
+
+//Afficher chaque item du tableau 1
+for (i = 0; i < array.length; i++) {
+  console.log(array[i]);
+}
+
+//Afficher chaque item du tableau 2
+for (i = 0; i < array1.length; i++) {
+  console.log(array1[i]);
+}
+
+//Afficher chaque type d'item du tableau 2
+for (i = 0; i < array1.length; i++) {
+  console.log(typeof array1[i]);
+}
+
+//Trier un tableau de numérique par ordre croissant
+const tabNum = [32, 3, 7, 2, 9, 0];
+tabNum.sort((a, b) => {
+  return a - b;
+});
+console.log(tabNum);
+
+//Trier un tableau de numérique par ordre décroissant
+tabNum.sort((a, b) => {
+  return b - a;
+});
+console.log(tabNum);
